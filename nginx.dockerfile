@@ -7,3 +7,5 @@ RUN openssl req -x509 -nodes \
     -newkey rsa:2048 \
     -keyout /etc/nginx/ssl/nginx.key \
     -out /etc/nginx/ssl/nginx.crt
+RUN echo -n 'user:' > /etc/nginx/.htpasswd
+RUN openssl passwd -apr1 'password' >> /etc/nginx/.htpasswd

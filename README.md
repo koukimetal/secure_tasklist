@@ -1,11 +1,11 @@
 **About**
-flask and nginx on docker with static files
+flask and nginx on docker with https basic auth
 
 **Set up**
 
 * $ docker-compose build
 * $ docker-compose up
-* Access http://localhost:8080 or http://0.0.0.0:8080
+* Access https://localhost:8433 or https://0.0.0.0:8433
 
 
 **Set up with debugger for Intellij or PyCharm**
@@ -15,5 +15,5 @@ flask and nginx on docker with static files
 * $ docker-compose build
 * Start Remote Python Debug
 * $ docker-compose up
-* Access http://localhost:8080 or http://0.0.0.0:8080
+* Access https://localhost:8433 or https://0.0.0.0:8433
 
